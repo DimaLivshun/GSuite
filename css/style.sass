@@ -31,11 +31,17 @@ header
 		color:#1e1d1d!important
 		font-size:16px
 		margin-right:32px
+		&:hover
+			color:#64b0fe!important
+			text-decoration: none
 	.number
 		font-size: 18px
 		color:#59b3fc!important
 		font-family: $bold
 		vertical-align: -1px
+		&:hover
+			color:#63d5ff!important
+			text-decoration: none
 .info
 	.first-second-wrap,
 	.third-fourth-wrap
@@ -52,6 +58,12 @@ header
 			left:18%
 			bottom:-19px
 			z-index:1
+			&:hover
+				background: url('../img/hovers-scroll-button.png')
+				width:40px
+				height:40px
+				img
+					display: none
 		.title
 			font-size:50px
 			color:#000
@@ -135,6 +147,9 @@ header
 				font-family: $reg
 			.mycount
 				display: inline-block
+				&:hover
+					color:#fff
+					background: #63d5ff
 			.button-minus
 				background: transparent
 				border: 1px solid #b7ddfc
@@ -170,6 +185,7 @@ header
 				width:60%
 				&:focus
 					outline: none
+					border-bottom:1px solid #63d5ff
 			.submit-button
 				background: #59b3fc
 				border: none
@@ -181,11 +197,12 @@ header
 				font-family: $bold
 				&:hover
 					cursor: pointer
+					background:#63d5ff
 				&:focus
 					outline: none
 				.tarif-price
 					display: inline-block
-					border-left: 1px solid #76bdfb
+					border-left: 1px solid rgba(255,255,255,0.3)
 					padding: 14px 5px 14px 17px
 					margin-left: 45px
 					font-family: $bold
@@ -259,6 +276,12 @@ header
 			color:#000
 			font-size:16px
 			font-family: $bold
+			&:hover
+				color:#fff
+				text-decoration: none
+				background:#63d5ff
+				border-bottom-left-radius: 5px
+				border-bottom-right-radius: 5px
 footer
 	background:#1e1d1d
 	padding:50px 0
@@ -268,10 +291,21 @@ footer
 	.wrap-inner
 		max-width:1366px
 		margin:0 auto
-	.myadres,
+	.myadres
+		padding-right: 10px
+		padding-left: 10px
+		.adress
+			color:#fff
+			&:hover
+				color:#3f78a7
 	.mymail
 		padding-right: 10px
 		padding-left: 10px
+		a
+			color:#fff
+			&:hover
+				color:#3f78a7
+				text-decoration: none
 	.footer-phone-wrap
 		text-align: center
 		.telephone
@@ -279,6 +313,9 @@ footer
 			color:#59b3fc!important
 			font-family: $bold
 			vertical-align:-2px
+			&:hover
+				color:#63d5ff!important
+				text-decoration: none
 	.info-wrap,
 	.logo-wrap
 		text-align: right

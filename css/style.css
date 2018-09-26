@@ -37,11 +37,19 @@ header .about {
   font-size: 16px;
   margin-right: 32px;
 }
+header .about:hover {
+  color: #64b0fe !important;
+  text-decoration: none;
+}
 header .number {
   font-size: 18px;
   color: #59b3fc !important;
   font-family: "CeraWebBold";
   vertical-align: -1px;
+}
+header .number:hover {
+  color: #63d5ff !important;
+  text-decoration: none;
 }
 
 .info .first-second-wrap,
@@ -62,6 +70,14 @@ header .number {
   left: 18%;
   bottom: -19px;
   z-index: 1;
+}
+.info .first .scroll-button:hover {
+  background: url("../img/hovers-scroll-button.png");
+  width: 40px;
+  height: 40px;
+}
+.info .first .scroll-button:hover img {
+  display: none;
 }
 .info .first .title {
   font-size: 50px;
@@ -164,6 +180,10 @@ header .number {
 .info .fourth .form .mycount {
   display: inline-block;
 }
+.info .fourth .form .mycount:hover {
+  color: #fff;
+  background: #63d5ff;
+}
 .info .fourth .form .button-minus {
   background: transparent;
   border: 1px solid #b7ddfc;
@@ -205,6 +225,7 @@ header .number {
 }
 .info .fourth .form .myinfo:focus {
   outline: none;
+  border-bottom: 1px solid #63d5ff;
 }
 .info .fourth .form .submit-button {
   background: #59b3fc;
@@ -218,13 +239,14 @@ header .number {
 }
 .info .fourth .form .submit-button:hover {
   cursor: pointer;
+  background: #63d5ff;
 }
 .info .fourth .form .submit-button:focus {
   outline: none;
 }
 .info .fourth .form .submit-button .tarif-price {
   display: inline-block;
-  border-left: 1px solid #76bdfb;
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
   padding: 14px 5px 14px 17px;
   margin-left: 45px;
   font-family: "CeraWebBold";
@@ -316,6 +338,13 @@ header .number {
   font-size: 16px;
   font-family: "CeraWebBold";
 }
+.decision .service a:hover {
+  color: #fff;
+  text-decoration: none;
+  background: #63d5ff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
 
 footer {
   background: #1e1d1d;
@@ -328,10 +357,26 @@ footer .wrap-inner {
   max-width: 1366px;
   margin: 0 auto;
 }
-footer .myadres,
+footer .myadres {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+footer .myadres .adress {
+  color: #fff;
+}
+footer .myadres .adress:hover {
+  color: #3f78a7;
+}
 footer .mymail {
   padding-right: 10px;
   padding-left: 10px;
+}
+footer .mymail a {
+  color: #fff;
+}
+footer .mymail a:hover {
+  color: #3f78a7;
+  text-decoration: none;
 }
 footer .footer-phone-wrap {
   text-align: center;
@@ -341,6 +386,10 @@ footer .footer-phone-wrap .telephone {
   color: #59b3fc !important;
   font-family: "CeraWebBold";
   vertical-align: -2px;
+}
+footer .footer-phone-wrap .telephone:hover {
+  color: #63d5ff !important;
+  text-decoration: none;
 }
 footer .info-wrap,
 footer .logo-wrap {
