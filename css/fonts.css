@@ -1,0 +1,21 @@
+/* font-family: "CeraWebBold"; */
+@font-face {
+	font-family: "CeraWebBold";
+	src: url("../fonts/CeraWebBold/CeraWebBold.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "CeraWebRegular"; */
+@font-face {
+	font-family: "CeraWebRegular";
+	src: url("../fonts/CeraWebRegular/CeraWebRegular.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "CeraProRegular"; */
+@font-face {
+	font-family: "CeraProRegular";
+	src: url("../fonts/CeraProRegular/CeraProRegular.otf") format("opentype");
+	font-style: normal;
+	font-weight: normal;
+}

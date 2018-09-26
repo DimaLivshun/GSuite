@@ -1,0 +1,353 @@
+body {
+  font-family: "CeraWebBold";
+  min-width: 320px;
+}
+body .row {
+  margin: 0;
+}
+
+header {
+  background-color: #fff;
+}
+header .logo {
+  padding: 13px 0 18px;
+}
+header .logo img {
+  margin-left: 30px;
+}
+header .logo span {
+  font-family: "CeraWebBold";
+  margin-right: 7px;
+}
+header .logo .by {
+  font-family: "CeraWebRegular";
+  vertical-align: 10px;
+  font-size: 14px;
+  margin-top: 5px;
+  color: #737373;
+}
+header .right-bar {
+  position: absolute;
+  top: 30%;
+  right: 30px;
+}
+header .about {
+  font-family: "CeraProRegular";
+  color: #1e1d1d !important;
+  font-size: 16px;
+  margin-right: 32px;
+}
+header .number {
+  font-size: 18px;
+  color: #59b3fc !important;
+  font-family: "CeraWebBold";
+  vertical-align: -1px;
+}
+
+.info .first-second-wrap,
+.info .third-fourth-wrap {
+  padding: 0;
+}
+.info .wrap-inner {
+  padding: 0;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.info .first {
+  background-color: #f5f9fc;
+  padding: 100px 0 130px;
+}
+.info .first .scroll-button {
+  position: absolute;
+  left: 18%;
+  bottom: -19px;
+  z-index: 1;
+}
+.info .first .title {
+  font-size: 50px;
+  color: #000;
+  font-family: "CeraWebBold";
+  border-bottom: 1px solid #e4e7ea;
+  padding-bottom: 18px;
+  white-space: pre-line;
+  line-height: 1.2;
+}
+.info .first .cena {
+  width: 100%;
+  max-width: 266px;
+  border: 1px solid;
+  border-radius: 30px;
+  border: 1px solid #64b0fe;
+  padding: 0;
+  margin-top: 36px;
+}
+.info .first .cena .itsprice {
+  display: inline-block;
+  width: 23%;
+  border-right: 1px solid rgba(98, 177, 254, 0.3);
+  padding: 8px 0;
+}
+.info .first .cena .itsprice i {
+  display: block;
+  text-align: center;
+  color: #59b3fc;
+  font-size: 18px;
+  font-family: "CeraWebBold";
+  font-style: normal;
+}
+.info .first .cena .itstext {
+  display: inline-block;
+  width: 75%;
+}
+.info .first .cena .itstext i {
+  display: block;
+  text-align: center;
+  color: #59b3fc;
+  font-size: 18px;
+  font-family: "CeraWebRegular";
+  font-style: normal;
+}
+.info .second {
+  background-color: #64b0fe;
+  text-align: center;
+}
+.info .second img {
+  width: 100%;
+  margin-top: 1%;
+}
+.info .third {
+  padding: 95px 0 0;
+}
+.info .third .title {
+  color: #000;
+  font-size: 32px;
+  font-family: "CeraWebBold";
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+.info .third .title:before {
+  top: 25%;
+  width: 20%;
+  height: 1px;
+  content: "";
+  background: #e5e5e5;
+  position: absolute;
+}
+.info .third p {
+  font-size: 16px;
+  color: #000;
+}
+.info .fourth {
+  padding: 95px 0 90px;
+  background-color: #f5f9fc;
+}
+.info .fourth .title-wrap {
+  border-bottom: 1px solid #e9ecef;
+}
+.info .fourth .title-wrap .title {
+  font-size: 32px;
+  color: #000;
+  font-family: "CeraWebBold";
+  text-align: center;
+  margin-bottom: 40px;
+}
+.info .fourth .form {
+  text-align: center;
+  margin-top: 39px;
+}
+.info .fourth .form .title {
+  font-size: 16px;
+  color: #adb0b4;
+  letter-spacing: 1px;
+  font-family: "CeraWebRegular";
+}
+.info .fourth .form .mycount {
+  display: inline-block;
+}
+.info .fourth .form .button-minus {
+  background: transparent;
+  border: 1px solid #b7ddfc;
+  border-radius: 50%;
+  padding: 1px 11px 4px;
+  font-size: 20px;
+  color: #58b3fc;
+}
+.info .fourth .form .button-minus:focus {
+  outline: none;
+}
+.info .fourth .form .simple-count {
+  color: #000;
+  margin: 0 19px;
+  font-size: 24px;
+}
+.info .fourth .form .button-plus {
+  background: transparent;
+  border: 1px solid #b7ddfc;
+  border-radius: 50%;
+  padding: 1px 11px 4px 11px;
+  font-size: 20px;
+  color: #58b3fc;
+}
+.info .fourth .form .button-plus:focus {
+  outline: none;
+}
+.info .fourth .form .myinfo {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  background: transparent;
+  color: #909397;
+  border: none;
+  border-bottom: 1px solid #d0dffa;
+  margin-top: 20px;
+  font-family: "CeraWebRegular";
+  width: 60%;
+}
+.info .fourth .form .myinfo:focus {
+  outline: none;
+}
+.info .fourth .form .submit-button {
+  background: #59b3fc;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px 0 60px;
+  font-size: 18px;
+  color: #fff;
+  margin-top: 30px;
+  font-family: "CeraWebBold";
+}
+.info .fourth .form .submit-button:hover {
+  cursor: pointer;
+}
+.info .fourth .form .submit-button:focus {
+  outline: none;
+}
+.info .fourth .form .submit-button .tarif-price {
+  display: inline-block;
+  border-left: 1px solid #76bdfb;
+  padding: 14px 5px 14px 17px;
+  margin-left: 45px;
+  font-family: "CeraWebBold";
+}
+
+.decision {
+  padding: 100px 0 120px;
+  background-color: #59b3fc;
+}
+.decision .wrap-inner {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.decision .wrap-inner .wrapper {
+  padding: 0;
+}
+.decision .title {
+  font-size: 32px;
+  font-family: "CeraWebBold";
+  color: #fff;
+  text-align: center;
+}
+.decision .title:before {
+  top: 14%;
+  left: 40%;
+  width: 20%;
+  height: 1px;
+  content: "";
+  background: #e5e5e5;
+  position: absolute;
+}
+.decision .tarif-wrap {
+  margin-top: 80px;
+}
+.decision .line-wrap .line {
+  height: 1px;
+  background-color: #bde1fe;
+  margin-bottom: 50px;
+}
+.decision .service {
+  text-align: center;
+}
+.decision .service .content-wrap {
+  background: #fff;
+  border-radius: 5px;
+  padding: 0;
+}
+.decision .service .content-wrap .forphoto,
+.decision .service .content-wrap .forcontent {
+  padding: 0;
+}
+.decision .service img {
+  width: 100%;
+}
+.decision .service .title-block {
+  font-size: 24px;
+  color: #000;
+  font-family: "CeraWebBold";
+  background: #fff;
+  margin-top: 35px;
+}
+.decision .service ul {
+  border: 1px solid #64b0fe;
+  border-radius: 30px;
+  width: 45%;
+  padding: 0;
+  margin: 0 auto 40px;
+  max-width: 133px;
+}
+.decision .service ul li {
+  display: inline-block;
+  color: #59b3fc;
+  padding: 6px 0;
+  font-size: 16px;
+}
+.decision .service ul .price {
+  padding-right: 15px;
+  border-right: 1px solid rgba(98, 177, 254, 0.3);
+  font-family: "CeraWebBold";
+}
+.decision .service ul .for {
+  padding-left: 10px;
+}
+.decision .service a {
+  display: block;
+  padding: 12px 0;
+  border-top: 1px solid #def0fe;
+  color: #000;
+  font-size: 16px;
+  font-family: "CeraWebBold";
+}
+
+footer {
+  background: #1e1d1d;
+  padding: 50px 0;
+  color: #fff;
+  font-family: "CeraWebRegular";
+  font-size: 16px;
+}
+footer .wrap-inner {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+footer .myadres,
+footer .mymail {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+footer .footer-phone-wrap {
+  text-align: center;
+}
+footer .footer-phone-wrap .telephone {
+  font-size: 24px;
+  color: #59b3fc !important;
+  font-family: "CeraWebBold";
+  vertical-align: -2px;
+}
+footer .info-wrap,
+footer .logo-wrap {
+  text-align: right;
+}
+footer .footer-info {
+  color: #555555;
+}
+
+/*# sourceMappingURL=style.css.map */

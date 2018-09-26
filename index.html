@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GSuite</title>
+	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/burger-cross.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div class="row">
+			<div class="col-12 justify-content-between align-items-center">
+				<div class="logo">
+					<img src="img/logo-top.png" alt="logo">
+					<span class="by">by Google</span>
+				</div>
+				<div id="menu-toggle" class="d-sm-block d-md-none d-lg-none">
+  				<div id="hamburger">
+  				  <span></span>
+  				  <span></span>
+  				  <span></span>
+  				</div>
+  				<div id="cross">
+  				  <span></span>
+  				  <span></span>
+  				</div>
+				</div>
+				<div class="right-bar">
+					<a href="#" class="about">О продукте</a>
+					<a href="tel:+380443590989" class="number">+38 044 359 0989</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<section class="info">
+		<div class="row">
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 first-second-wrap">
+				<div class="row">
+					<div class="col-12 wrap-inner">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 first">
+								<div class="row justify-content-center">
+									<div class="col-9 col-sm-9 col-md-11 col-lg-11 col-xl-9 wrap">
+										<p class="title">Additional space
+										50 GB</p>
+										<!--<ul>
+											<li class="price">10$</li>
+											<li class="for">лицензия на год</li>
+										</ul>-->
+										<div class="cena">
+											<div class="itsprice"><i>10$</i></div>
+											<div class="itstext"><i>лицензия на год</i></div>
+										</div>
+									</div>
+								</div>
+								<a href="#third-block" class="scroll-button"><img src="img/scroll-button.png" alt=""></a>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-6 second">
+								<img src="img/comp.jpg" alt="comp">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 third-fourth-wrap">
+				<div class="row">
+					<div class="col-12 wrap-inner">
+						<div class="row">
+							<div id="third-block" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 third">
+								<div class="row justify-content-center">
+									<div class="col-9 col-sm-9 col-md-8 col-lg-7 col-xl-9 wrap">
+										<p class="title">Бизнес эффективнее 
+										с G Suite</p>
+										<p class="main-info-one">Идейные соображения высшего порядка, а также рамки и место обучения кадров позволяет оценить значение существенных финансовых и административных условий.</p>
+										<p class="main-info-two">Задача организации, в особенности же консультация с широким активом способствует подготовке и реализации соответствующих условий активизации. Идейные соображения высшего</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 fourth">
+								<div class="row justify-content-center">
+									<div class="col-12 title-wrap">
+										<div class="row justify-content-center">
+											<div class="col-9">
+												<p class="title">Подключить G Suite Business
+												 на 1 год</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="row justify-content-center">
+											<div class="col-11 col-sm-9 col-md-9 col-lg-9 col-xl-9 form">
+												<p class="title">Количество лицензий</p>
+												<form id="contact_form" method="post" action="php/mail.php">
+													<input type="button" value="−" id="minus" class="mycount button-minus">
+													<p id="count" name="lisence_count" class="mycount simple-count">1</p>
+													<input type="button" value="+" id="plus" class="mycount button-plus">
+													<input type="text" id="name" name="name" class="myinfo" placeholder="Ваше имя">
+													<input type="tel" id="phone" name="phone"  class="myinfo" placeholder="Телефон">
+													<input type="email" id="email" name="email" class="myinfo" placeholder="Email">
+													<button type="submit" id="send-button" class="submit-button">Подключить<span id="current-price" name="price" class="tarif-price">$10</span></button>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+
+	<section class="decision">
+		<div class="row justify-content-center">
+			<div class="col-12 wrap-inner">
+				<div class="row justify-content-center">
+					<div class="col-12 col-md-12 col-lg-12 col-xl-10 wrapper">
+						<div class="row justify-content-center">
+							<p class="title">Больше полезных решений для бизнеса</p>
+								<div class="col-12 tarif-wrap">
+									<div class="row">
+										<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 service">
+											<div class="row">
+												<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 content-wrap">
+													<div class="row">
+														<div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 forphoto">
+															<img src="img/one.png" alt="">
+														</div>
+														<div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 forcontent">
+															<p class="title-block">G Suit Basic</p>
+															<ul>
+																<li class="price">10$</li>
+																<li class="for">в год</li>
+															</ul>
+															<a href="">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+										<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 service">
+											<div class="row">
+												<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 content-wrap">
+													<div class="row">
+														<div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 forphoto">
+															<img src="img/two.png" alt="">
+														</div>
+														<div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 forcontent">
+															<p class="title-block">Additional space 50 Gb</p>
+															<ul>
+																<li class="price">20$</li>
+																<li class="for">в год</li>
+															</ul>
+															<a href="">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+
+
+
+
+
+										<div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 service">
+											<div class="row">
+												<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 content-wrap">
+													<div class="row">
+														<div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 forphoto">
+															<img src="img/three.png" alt="">
+														</div>
+														<div class="col-12 col-sm-12 col-md-6 col-lg-12 col-xl-12 forcontent">
+															<p class="title-block">G Suit Vault</p>
+															<ul>
+																<li class="price">50$</li>
+																<li class="for">в год</li>
+															</ul>
+															<a href="">Подробнее</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>								
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+
+		<div class="row">
+			<div class="col-12 wrap-inner">
+				<div class="row">
+					<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 left-content-wrap">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 footer-info-wrap myadres">
+								<span class="adress">Киев, ул. Пимоненко, 13</span>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 footer-info-wrap mymail">
+								<span class="mail">google@techsvit.eu</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 center-content-wrap align-items-center">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 footer-phone-wrap footer-info-wrap">
+								<a href="tel:+380443590989" class="telephone">+38 044 359 0989</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 last">
+						<div class="row">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 info-wrap footer-info-wrap date">
+								<span class="footer-info">© 2017 techsvit.eu</span>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 logo-wrap footer-info-wrap mylogo">
+								<img src="img/logo.png" alt="logo">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+
+	<script src="libs/jquery/jquery-3.3.1.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
