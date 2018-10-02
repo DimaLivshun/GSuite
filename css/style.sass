@@ -7,6 +7,8 @@ body
 	min-width: 320px
 	.row
 		margin:0
+	title
+		display: block
 header
 	background-color: #fff
 	.logo
@@ -123,9 +125,6 @@ header
 				content: ''
 				background: #e5e5e5
 				position: absolute
-		p
-			font-size:16px
-			color:#000
 	.fourth
 		padding:95px 0 90px
 		background-color:#f5f9fc
@@ -147,9 +146,6 @@ header
 				font-family: $reg
 			.mycount
 				display: inline-block
-				&:hover
-					color:#fff
-					background: #63d5ff
 			.button-minus
 				background: transparent
 				border: 1px solid #b7ddfc
@@ -159,6 +155,9 @@ header
 				color:#58b3fc
 				&:focus
 					outline: none
+				&:hover
+					color:#fff
+					background: #63d5ff
 			.simple-count
 				color:#000
 				margin:0 19px
@@ -172,6 +171,9 @@ header
 				color:#58b3fc
 				&:focus
 					outline: none
+				&:hover
+					color:#fff
+					background: #63d5ff
 			.myinfo
 				display: block
 				margin:0 auto
@@ -203,9 +205,34 @@ header
 				.tarif-price
 					display: inline-block
 					border-left: 1px solid rgba(255,255,255,0.3)
-					padding: 14px 5px 14px 17px
+					padding: 14px 0 14px 5px
 					margin-left: 45px
 					font-family: $bold
+					width:50px
+		.overlay
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			display: none
+			text-align: center
+			.popup
+				position: absolute
+				width: 100%
+				height: 100%
+				padding: 40px
+				background-color: #f5f9fc
+				.mytext
+					margin-top: 40%
+					.top-word
+						color:#000
+						font-family:$bold
+						font-size:32px
+					.bot-word
+						color: #000
+						font-family:$reg
+
 .decision
 	padding: 100px 0 120px
 	background-color:#59b3fc
@@ -251,6 +278,7 @@ header
 			font-family: $bold
 			background:#fff
 			margin-top: 35px
+			margin-bottom: 16px
 		ul
 			border:1px solid #64b0fe
 			border-radius:30px
@@ -316,9 +344,13 @@ footer
 			&:hover
 				color:#63d5ff!important
 				text-decoration: none
-	.info-wrap,
+	.info-wrap
+		text-align: right
 	.logo-wrap
 		text-align: right
+		margin-top:-5px
+		img
+			max-width:180px
 	.footer-info
 		color:#555555
 

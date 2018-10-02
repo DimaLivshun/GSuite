@@ -5,6 +5,9 @@ body {
 body .row {
   margin: 0;
 }
+body title {
+  display: block;
+}
 
 header {
   background-color: #fff;
@@ -149,10 +152,6 @@ header .number:hover {
   background: #e5e5e5;
   position: absolute;
 }
-.info .third p {
-  font-size: 16px;
-  color: #000;
-}
 .info .fourth {
   padding: 95px 0 90px;
   background-color: #f5f9fc;
@@ -180,10 +179,6 @@ header .number:hover {
 .info .fourth .form .mycount {
   display: inline-block;
 }
-.info .fourth .form .mycount:hover {
-  color: #fff;
-  background: #63d5ff;
-}
 .info .fourth .form .button-minus {
   background: transparent;
   border: 1px solid #b7ddfc;
@@ -194,6 +189,10 @@ header .number:hover {
 }
 .info .fourth .form .button-minus:focus {
   outline: none;
+}
+.info .fourth .form .button-minus:hover {
+  color: #fff;
+  background: #63d5ff;
 }
 .info .fourth .form .simple-count {
   color: #000;
@@ -210,6 +209,10 @@ header .number:hover {
 }
 .info .fourth .form .button-plus:focus {
   outline: none;
+}
+.info .fourth .form .button-plus:hover {
+  color: #fff;
+  background: #63d5ff;
 }
 .info .fourth .form .myinfo {
   display: block;
@@ -247,9 +250,38 @@ header .number:hover {
 .info .fourth .form .submit-button .tarif-price {
   display: inline-block;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 14px 5px 14px 17px;
+  padding: 14px 0 14px 5px;
   margin-left: 45px;
   font-family: "CeraWebBold";
+  width: 50px;
+}
+.info .fourth .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  text-align: center;
+}
+.info .fourth .overlay .popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: #f5f9fc;
+}
+.info .fourth .overlay .popup .mytext {
+  margin-top: 40%;
+}
+.info .fourth .overlay .popup .mytext .top-word {
+  color: #000;
+  font-family: "CeraWebBold";
+  font-size: 32px;
+}
+.info .fourth .overlay .popup .mytext .bot-word {
+  color: #000;
+  font-family: "CeraWebRegular";
 }
 
 .decision {
@@ -307,6 +339,7 @@ header .number:hover {
   font-family: "CeraWebBold";
   background: #fff;
   margin-top: 35px;
+  margin-bottom: 16px;
 }
 .decision .service ul {
   border: 1px solid #64b0fe;
@@ -391,9 +424,15 @@ footer .footer-phone-wrap .telephone:hover {
   color: #63d5ff !important;
   text-decoration: none;
 }
-footer .info-wrap,
+footer .info-wrap {
+  text-align: right;
+}
 footer .logo-wrap {
   text-align: right;
+  margin-top: -5px;
+}
+footer .logo-wrap img {
+  max-width: 180px;
 }
 footer .footer-info {
   color: #555555;

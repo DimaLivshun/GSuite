@@ -31,6 +31,10 @@
 	footer .footer-phone-wrap .telephone {
     vertical-align: -15px;
 	}
+	footer .logo-wrap {
+  	text-align: right;
+  	margin-top: 0;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -55,6 +59,10 @@
 	}
 	.info .first .cena {
   	margin:0 auto;
+	}
+	.info .first ul{
+  	margin: 0 auto;
+  	padding: 0 25px 0 22px;
 	}
 	.info .first {
     background-color: #f5f9fc;
@@ -115,6 +123,13 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	.right-bar{
+	    position: relative;
+		top:0;
+		visibility: visible;
+		padding-top: 0;
+		opacity: 1;
+		transform: translate(0em);
+		transition: none;
 		background-color: #fff;
 		display: none;
 		padding: 35px 0 45px 0;
@@ -133,6 +148,9 @@
 		margin-right:0!important;
 		margin-bottom: 25px;
 	}
+	#menu-toggle {
+    	display: inline-block!important;
+	}
 	.info .first{
     background-color: #f5f9fc;
     padding: 45px 0;
@@ -141,9 +159,18 @@
   	font-size: 30px;
   	white-space: pre-line;
 	}
+	.info .first ul{
+  	padding: 0 0 0 15px;
+  	margin: 0 auto;
+  	width: 83%;
+  	margin-top: 10px;
+	}
+	.info .first ul li {
+ 	 font-size: 16px;
+ 	 padding:5px 0
+	}
 	.info .first .cena {
 	  min-width: 195px;
-	  margin: 10px auto 0;
 	}
 	.info .first .cena .itsprice i {
 	  font-size: 16px;
@@ -172,7 +199,7 @@
   	white-space: pre-line;
 	}
 	.info .third .title:before {
-    top: 28%;
+    top: 25%;
 	}
 	.info .fourth .title-wrap .title {
   	font-size: 22px;
@@ -270,6 +297,12 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+    header .logo img {
+        width: 25%;
+    }
+    header .logo .by {
+        font-size: 12px;
+    }
 	.info .fourth .form .submit-button {
    	padding: 0;
    	width: 85%;
@@ -283,10 +316,16 @@
     font-size: 24px;
     }
 	.last{
-		margin-top: 45px;
+		margin-top: 25px;
+	}
+	footer .info-wrap, footer .info-wrap{
+    margin-bottom: 10px;
 	}
 	footer .info-wrap, footer .logo-wrap {
     margin-top:20px;
+	}
+	footer .info-wrap, footer .logo-wrap img{
+	    width:40%;
 	}
 }
 
@@ -311,7 +350,7 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
+@media only screen and (min-width : 769px) {
 	.right-bar{
 		display: inline-block!important;
 	}
@@ -339,5 +378,8 @@
 	  	background: -o-linear-gradient(left, #ffffff 50%, #f5f9fc 50%, #f5f9fc 50%);
 	  	background: linear-gradient(to right, #ffffff 50%, #f5f9fc 50%, #f5f9fc 50%);
 	  	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#ffffff", endColorstr="#f5f9fc",GradientType=0 );
+	}
+	footer .logo-wrap {
+    	bottom: :10px;
 	}
 }

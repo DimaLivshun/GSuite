@@ -30,7 +30,7 @@
   width: 24px;
   height: 1px;
   position: relative;
-  top: 24px;
+  top: 17px;
   left: 20px;
   margin: 3px 0;
 }
@@ -53,16 +53,16 @@
   height: 0%;
   width: 1px;
   position: absolute;
-  top: 19%;
-  left: 39px;
+  top: -3%;
+  left: 30px;
   transition-delay: 0s;
 }
 #menu-toggle #cross span:nth-child(2) {
   width: 0%;
   height: 1px;
   position: absolute;
-  left: 62%;
-  top: 22px;
+  left: 40%;
+  top: 13px;
   transition-delay: 0.25s;
 }
 #menu-toggle.open #hamburger span {

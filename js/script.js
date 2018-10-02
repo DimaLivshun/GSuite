@@ -24,6 +24,42 @@ $(document).ready(function(){
 		$('#count').html(count);
 		$('#current-price').html("$" + price);		
 	});
+	$('#contact_form .submit-button').on('click', function() {
+			let name = $('input[name="name"]').val();
+			let phone = $('input[name="phone"]').val();
+			let	intRegex = /[0-9 -()+]+$/;
+			let email = $('input[name="email"]').val();
+			let	emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+			if (name == "" || phone == "" || email == ""){
+				alert('Все поля должны быть заполнены');
+			}
+			else if( (!intRegex.test(phone)) || (!emailReg.test(email)) ){
+				alert("Данные введены некорректно!");
+			}
+			else{
+				//берем путь php обработчика
+				order_url = $('#contact_form').attr('action');
+				//посылаем асинхронный запрос на сервер и передаем все данные формы
+				$.post(order_url,{
+					name: $('#contact_form input[name=name]').val(),
+					tel: $('#contact_form input[name=phone]').val(),
+					email: $('#contact_form input[name=email]').val(),
+					lisence_count: $('#contact_form #count').text(),
+					price: $('#contact_form #current-price').text(),
+					send: "1"
+				}).done(function() {
+					count = 1;
+					price = 10;
+					$('#contact_form #count').text(count);
+					$('#contact_form #current-price').text("$" + price);
+					$('#contact_form #name').val("");
+					$('#contact_form #phone').val("");
+					$('#contact_form #email').val("");
+					$('.js-overlay-thank-you').fadeIn().delay(3000).fadeOut();
+				});
+			}
+        return false;
+    });
 
 
 
@@ -67,29 +103,6 @@ $(document).ready(function(){
     $('body,html').animate({scrollTop: top}, 1500);
   });
 
-
-
-
-
-	$('#contact_form .submit-button').on('click', function() {
-            //берем путь php обработчика
-            order_url = $('#contact_form').attr('action');
-            //посылаем асинхронный запрос на сервер и передаем все данные формы
-            $.post(order_url,{
-                name: $('#contact_form input[name=name]').val(),
-                tel: $('#contact_form input[name=phone]').val(),
-                email: $('#contact_form input[name=email]').val(),
-                lisence_count: $('#contact_form #count').text(),
-                price: $('#contact_form #current-price').text(),
-                send: "1"
-            }, "html");
-            $('#contact_form #count').text("1");
-            $('#contact_form #current-price').text("$10");
-            $('#contact_form #name').val("");
-            $('#contact_form #phone').val("");
-            $('#contact_form #email').val("");
-        return false;
-    });
 
 
 
